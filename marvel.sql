@@ -182,12 +182,16 @@ INSERT INTO attendances (person_id, movie_id) VALUES (3, 4);
 -- SELECT * FROM movies
 
 -- 9. The cinema would also like to make the Guardian movies a back to back feature. Update the 'Guardians of the Galaxy' show time from 17:55 to 21:30
-UPDATE movies SET show_time = '21:30'
-WHERE title = 'Guardians of the Galaxy';
-SELECT * FROM movies
+-- UPDATE movies SET show_time = '21:30'
+-- WHERE title = 'Guardians of the Galaxy';
+-- SELECT * FROM movies
+
 -- ## Extension
 --
 -- 1. Research how to delete multiple entries from your table in a single command.
+DELETE FROM people
+WHERE name IN ('Robert Henderson', 'Dave Ellis');
+SELECT * FROM people;
 --
 -- ## Extra Extension
 --
